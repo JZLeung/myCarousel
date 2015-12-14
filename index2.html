@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="carouselPanel">
+		<!-- <span class="prevbtn btn"></span>
+		<span class="nextbtn btn"></span> -->
+		<ul class="imgList">
+			<li class="item">
+				<img src="img/1.jpg" alt="" data-title="title" data-content="contentssssssssssssssssssss">
+			</li>
+			<li class="item">
+				<img src="img/2.jpg" alt="" data-title="title2" data-content="contentssssssssssssssssssss2">
+			</li>
+			<li class="item">
+				<img src="img/3.jpg" alt="" data-title="只有title3">
+			</li>
+			<li class="item">
+				<img src="img/4.jpg" alt="" data-title="title4" data-content="contentssssssssssssssssssss4">
+			</li>
+			<li class="item">
+				<img src="img/5.jpg" alt="" data-content="只有content5">
+			</li>
+		</ul>
+		
+	</div>
+	</div>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="slideBox.js"></script>
+	<script>
+	var carousel = $('.carouselPanel').slideBox({
+			carousel:'.imgList'
+		});
+	</script>
+</body>
+</html>

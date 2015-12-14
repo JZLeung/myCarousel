@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.carouselPanel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.carouselPanel img {
+  width: 100%;
+  display: block;
+}
+.carouselPanel ul.imgList {
+  width: 4000px;
+}
+.carouselPanel li.item {
+  width: 800px;
+  float: left;
+}
+.carouselPanel .captionPanel {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2px 0;
+  width: 100%;
+}
+.carouselPanel .captionPanel .caption {
+  padding: 2px 10px;
+}
+.carouselPanel .btn {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  cursor: pointer;
+}
+.carouselPanel .prevbtn {
+  background: url(img/prev.png) no-repeat left center;
+  left: 0;
+}
+.carouselPanel .nextbtn {
+  background: url(img/next.png) no-repeat right center;
+  right: 0;
+}
+.carouselPanel .pointerPanel {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  margin: 0 auto;
+}
+.carouselPanel .pointerPanel .circle {
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1.5em;
+  line-height: 1.5em;
+  text-indent: 0.5em;
+  background: #fff;
+  display: inline-block;
+  cursor: pointer;
+}
