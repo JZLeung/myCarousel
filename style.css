@@ -52,20 +52,31 @@ a {
   cursor: pointer;
 }
 .carouselPanel .prevbtn {
-  background: url(img/prev.png) no-repeat left center;
   left: 0;
 }
+.carouselPanel .prevbtn:hover {
+  background: url(img/prev.png) no-repeat left center;
+}
 .carouselPanel .nextbtn {
-  background: url(img/next.png) no-repeat right center;
   right: 0;
 }
-.carouselPanel .pointerPanel {
+.carouselPanel .nextbtn:hover {
+  background: url(img/next.png) no-repeat right center;
+}
+.carouselPanel .cursorPanel {
   position: absolute;
   bottom: 0;
-  right: 10px;
+  right: 0;
   margin: 0 auto;
 }
-.carouselPanel .pointerPanel .circle {
+.carouselPanel .cursorPanel .cursor {
+  padding: 10px 20px;
+}
+.carouselPanel .cursorPanel .active, .carouselPanel .cursorPanel .circle:hover {
+  background-color: #D67878 !important;
+  color: #fff;
+}
+.carouselPanel .cursorPanel .circle {
   height: 1.5em;
   width: 1.5em;
   border-radius: 1.5em;
@@ -74,4 +85,5 @@ a {
   background: #fff;
   display: inline-block;
   cursor: pointer;
+  margin-right: 10px;
 }

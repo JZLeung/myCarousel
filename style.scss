@@ -32,24 +32,29 @@ a{text-decoration: none;}
 		cursor: pointer;
 	}
 	.prevbtn{
-		background: url(img/prev.png) no-repeat left center;
+		&:hover{background: url(img/prev.png) no-repeat left center;}
 		left: 0;
 		
 	}
 	.nextbtn{
-		background: url(img/next.png) no-repeat right center;
+		&:hover{background: url(img/next.png) no-repeat right center;}
 		right: 0;
 		
 	}
-	.pointerPanel{
-		position: absolute;bottom: 0;right: 10px;
+	.cursorPanel{
+		position: absolute;bottom: 0;right: 0;
 		margin: 0 auto;
-		
+		.cursor{padding: 10px 20px;}
+		.active{background-color: #D67878 !important;color:#fff;}
 		.circle{
 			height: 1.5em;width: 1.5em;border-radius: 1.5em;
 			line-height: 1.5em;text-indent: 0.5em;
 			background: #fff;display: inline-block;
 			cursor: pointer;
+			margin-right: 10px;
+			&:hover{
+				@extend .active;
+			}
 		}
 	}
 }

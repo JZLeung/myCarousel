@@ -33,9 +33,13 @@
 	<script src="jquery-1.11.1.min.js"></script>
 	<script src="slideBox.js"></script>
 	<script>
+	var time1 =new Date();
 	var carousel = $('.carouselPanel').slideBox({
-			carousel:'.imgList'
+			carousel:'.imgList',
+			timeout:3000
 		});
+	var time2 = new Date();
+	console.log(time2.getTime() - time1.getTime())
 	</script>
 </body>
 </html>
